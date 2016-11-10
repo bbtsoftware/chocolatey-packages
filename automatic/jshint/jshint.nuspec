@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jshint</id>
+    <title>JSHint</title>
+    <version>2.9.4</version>
+    <authors>JSHint Team</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>http://jshint.com/</projectUrl>
+    <projectSourceUrl>https://github.com/jshint/jshint</projectSourceUrl>
+    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/jshint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/jshint.png</iconUrl>
+    <licenseUrl>https://github.com/jshint/jshint/blob/master/LICENSE</licenseUrl>
+    <docsUrl>http://jshint.com/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/jshint/jshint/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>JSHint is a tool that helps to detect errors and potential problems in your JavaScript code.</summary>
+    <description>JSHint is a community-driven tool that detects errors and potential problems in JavaScript code. Since JSHint is so flexible, you can easily adjust it in the environment you expect your code to execute. JSHint is open source and will always stay this way.</description>
+    <releaseNotes>https://github.com/jshint/jshint/releases</releaseNotes>
+    <tags>nodejs node javascript web lint jshint</tags>
+    <dependencies>
+      <dependency id="nodejs.install" />
+    </dependencies>
+  </metadata>
+</package>
