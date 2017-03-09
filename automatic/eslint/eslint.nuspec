@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>eslint</id>
+    <title>ESLint</title>
+    <version>3.9.1</version>
+    <authors>JS Foundation and other contributors</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>http://eslint.org</projectUrl>
+    <projectSourceUrl>https://github.com/eslint/eslint/</projectSourceUrl>
+    <packageSourceUrl>https://github.com/BBTSoftwareAG/chocolatey-packages/tree/master/automatic/eslint</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/BBTSoftwareAG/chocolatey-packages/master/icons/eslint.png</iconUrl>
+    <licenseUrl>https://github.com/eslint/eslint/blob/master/LICENSE</licenseUrl>
+    <docsUrl>http://eslint.org/</docsUrl>
+    <bugTrackerUrl>https://github.com/eslint/eslint/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A fully pluggable tool for identifying and reporting on patterns in JavaScript.</summary>
+    <description>
+ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs. In many ways, it is similar to JSLint and JSHint with a few exceptions:
+
+* ESLint uses [Espree](https://github.com/eslint/espree) for JavaScript parsing.
+* ESLint uses an AST to evaluate patterns in code.
+* ESLint is completely pluggable, every single rule is a plugin and you can add more at runtime.
+    </description>
+    <releaseNotes>https://github.com/eslint/eslint/blob/master/CHANGELOG.md</releaseNotes>
+    <tags>nodejs node javascript web lint eslint</tags>
+    <dependencies>
+      <dependency id="nodejs.install" />
+    </dependencies>
+  </metadata>
+</package>
