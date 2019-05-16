@@ -7,8 +7,8 @@ if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 $Options = [ordered]@{
     WhatIf        = $au_WhatIf                              #Whatif all packages
     Force         = $false                                  #Force all packages
-    Timeout       = 3600                                    #Connection timeout in seconds
-    UpdateTimeout = 3600                                    #Update timeout in seconds
+    Timeout       = 100                                     #Connection timeout in seconds
+    # UpdateTimeout = 3600                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
