@@ -508,7 +508,7 @@ function TestAuUpdatePackages() {
     Push-Location "$PSScriptRoot\.."
     .\test_all.ps1 -Name $packageNames -ThrowOnErrors
   } catch {
-    WriteOutput "Test failed with message: " $_.Exception.Message
+    WriteOutput "Test failed with message: $($_.Exception.Message)"
     SetAppveyorExitCode $LastExitCode
     throw "An exception ocurred during AU update. Cancelling all other checks."
   } finally {
