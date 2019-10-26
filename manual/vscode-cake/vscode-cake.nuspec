@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-cake</id>
     <title>Visual Studio Code Cake Extension</title>
-    <version>1.0.0.20181011</version>
+    <version>1.0.0.20191026</version>
     <authors>Cake Build</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</projectUrl>
@@ -29,6 +29,7 @@ This addin brings language support for [Cake](https://cakebuild.net/) build scri
     <releaseNotes>https://github.com/cake-build/cake-vscode/releases</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
+      <dependency id="vscode-csharp" version="[1.0,2.0)" />
     </dependencies>
   </metadata>
   <files>
