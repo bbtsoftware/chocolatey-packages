@@ -3,7 +3,7 @@
   <metadata>
     <id>ssis-vs2019</id>
     <title>Microsoft SQL Server Integration Services Projects for Visual Studio 2019</title>
-    <version>3.1</version>
+    <version>3.2</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects</projectUrl>
@@ -20,7 +20,7 @@ Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-
 
 This package has the following additional requirements:
 
-* Visual Studio 2019 core editor
+* Visual Studio core editor
 * SQL Server Data Tools
 * .NET Framework 4 targeting pack
 * .NET Framework 4.5 targeting pack
