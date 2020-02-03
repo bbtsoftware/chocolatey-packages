@@ -8,7 +8,7 @@
     <authors>SonarSource</authors>
     <owners>BBT Software AG</owners>
     <projectSourceUrl> https://github.com/SonarSource/sonarlint-visualstudio</projectSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages/tree/master/icons/sonarlint-vs2019.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@c3c9e2dc27be801aa02f61597f19668a64c030e6/icons/sonarlint-vs2019.png</iconUrl>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019</projectUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/sonarlint-vs2019</packageSourceUrl>
     <licenseUrl>https://github.com/SonarSource/sonarlint-visualstudio/blob/master/LICENSE</licenseUrl>
