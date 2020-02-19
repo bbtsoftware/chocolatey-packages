@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sonarqube-roslyn-sdk</id>
+    <title>SDK for SonarQube Roslyn Analyzer Plugins</title>
+    <version>2.0</version>
+    <authors>SonarSource</authors>
+    <owners>BBT Software AG</owners>
+    <projectSourceUrl>https://github.com/SonarSource/sonarqube-roslyn-sdk</projectSourceUrl>
+    <projectUrl>https://github.com/SonarSource/sonarqube-roslyn-sdk</projectUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/sonarqube-roslyn-sdk</packageSourceUrl>
+    <licenseUrl>https://github.com/SonarSource/sonarqube-roslyn-sdk/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>This package contains tools to help integrate Roslyn analyzers with SonarQube so that issues detected by the Roslyn analyzers are reported and managed in SonarQube. Specifically, the tools will generate a Java SonarQube plugin that registers the rules with SonarQube.</summary>
+    <description>
+## Welcome to the SonarQube Roslyn SDK project
+
+### License
+
+Copyright 2015-2018 SonarSource.
+
+Licensed under the [GNU Lesser General Public License, Version 3.0](http://www.gnu.org/licenses/lgpl.txt)
+
+### Overview
+This repo contains tools to help integrate Roslyn analyzers with SonarQube so that issues detected by the Roslyn analyzers are reported and managed in SonarQube.
+Specifically, the tools will generate a Java SonarQube plugin that registers the rules with SonarQube. The generated plugin works with the [C# plugin](http://docs.sonarqube.org/x/bAAW) (v4.5 or higher) and the [SonarQube Scanner for MSBuild](http://docs.sonarqube.org/x/Lx9q) (v2.0 or higher) to handle executing the analyzer and uploading any issues.
+See this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/18/sonarqube-scanner-for-msbuild-v2-0-released-support-for-third-party-roslyn-analyzers/) for more information.
+
+#### Integration with the SonarQube Scanner for MSBuild
+The [SonarQube Scanner for MSBuild](http://docs.sonarqube.org/x/Lx9q) will automatically execute your custom rules as part of an analysis build using the configuration you have defined in the Quality Profile. There is no need to manually reference your analyzer NuGet package in the MSBuild projects you want to analyse.
+
+The SonarQube Scanner for MSBuild can also import issues from Roslyn analyzers that do not have plugins created using this SDK. However, they will be imported as "external issues" and are handled differently in SonarQube. See [Importing Issues from Third-Party Roslyn Analyzers (C#, VB.NET)](https://docs.sonarqube.org/pages/viewpage.action?pageId=11640944) for more information.
+
+#### Integration with SonarLint for Visual Studio
+If you define a Quality Profile that references your custom rules then [SonarLint for Visual Studio ](https://github.com/sonarsource/sonarlint-visualstudio) in *Connected Mode* will include those rules in the ruleset it generates.
+However, it will **not** automatically configure Visual Studio to execute your custom rules.
+If you want your customer rules to be executed inside Visual Studio then you will need reference your analyzer NuGet package from your MSBuild projects, or install your analyzer VSIX on each developer machine.
+
+See the [SonarLint for Visual Studio wiki](https://github.com/SonarSource/sonarlint-visualstudio/wiki/Connected-Mode) for more information on Connected Mode.
+
+### Download latest release
+The latest release version (v2.0) is available [here](https://github.com/SonarSource-VisualStudio/sonarqube-roslyn-sdk/releases/download/2.0/SonarQube.Roslyn.SDK-2.0.zip).
+
+### Compatibility
+v1.0 of the SDK generates plugins that are compatible with SonarQube v4.5.2 -> v6.7.
+
+v2.0 generates plugins that are compatible versions of SonarQube from v6.7 (tested with the current latest available version, v7.3alpha1).
+
+If you have an existing plugin that was generated with v1.0 of the SDK and want to use the plugin with SonarQube 7.0 or later, you will need to create a new plugin using v2.0 of the SDK. If you customized the _SQALE.xml_ file for your v1.0 plugin, you will need to move the remediation information to the _rules.xml_ file for the v2.0 plugin.
+
+#### Current limitations:
+   - the analyzer must be available as a NuGet package
+   - the analyzer must use __Roslyn 2.8.2 or lower__ ~~(newer versions of Roslyn are not yet supported - see issue [SFSRAP-45](https://jira.sonarsource.com/browse/SFSRAP-45) for a workaround)~~
+   - only C# rules are supported
+
+#### Changes between v1.0 and v2.0
+The full list of changes is contained is available on the [release page](https://github.com/SonarSource/sonarqube-roslyn-sdk/releases/tag/2.0). The main changes are described in more detail below.
+
+* in v1.0, it was not possible to customize the _rules.xml_ file, although debt remediation information could be supplied in a separate _sqale.xml_ file. SQALE has been deprecated in SonarQube, and the format of the _rules.xml_ file has been extended to support debt remediation information. As a result, v2.0 of the SDK no longer supports providing a _sqale.xml_ file. Instead, it is now possible to manually edit the _rules.xml_ that describes the rule. This means debt remediation data can be added, and it also means that the rest of the metadata describing the rules can be edited to (e.g. to change the severity or classification or the rules, or to add tags).
+* v2.0 is built against Roslyn 2.8.2, so will work against analyzers that use that version of Roslyn or earlier.
+* v2.0 uses NuGet v4.7, which supports the TLS1.3 security protocol.
+
+### Target users
+There are two groups of target users:
+
+1. Roslyn analyzer authors
+   - Analyzer authors will be able to use the tools during development to provide additional metadata about their rules (e.g. SonarQube severity, tags, a richer description, ...) and generate the SonarQube plugin. See below for additional notes if you are developing your analyzer and running the SDK against the generated NuGet repeatedly on the same development machine.
+
+2. Roslyn analyzer users
+   - If the analyzer author has not provided a SonarQube plugin for their analyzer then users will be able to generate a plugin from an analyzer NuGet package, although they won't be able to provide such rich metadata.
+    </description>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
