@@ -1,6 +1,6 @@
 ﻿Update-SessionEnvironment
 
-$version = '2.2.1'
+$version = '2.3.0'
 
 if (-Not (Get-Command "node" -errorAction SilentlyContinue)) {
     Write-Error "Command line interface for gulp requires Node.js to be installed. To install with Chocolatey, use either of the commands below:"
