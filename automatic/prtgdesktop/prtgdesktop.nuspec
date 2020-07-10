@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>prtgdesktop</id>
+    <title>PRTG Desktop</title>
+    <version>20.8.0</version>
+    <authors>Paessler AG</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://www.paessler.com/prtg-desktop-app</projectUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/prtgdesktop</packageSourceUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@f3c3bb7897764479e510306eb015c899387bacd5/icons/prtgdesktop.png</iconUrl>
+    <tags>prtg monitoring</tags>
+    <summary>PRTG Desktop is an alternative interface that you can use to connect to a PRTG core server or a PRTG hosted by Paessler instance to configure your setup, view monitoring results, and keep an eye on your network.</summary>
+    <description><![CDATA[PRTG Desktop is an alternative interface that you can use to connect to a PRTG core server or a PRTG hosted by Paessler instance to configure your setup, view monitoring results, and keep an eye on your network.
+]]></description>
+   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
