@@ -1,1 +1,1 @@
-npm uninstall -g gulp-cli
+Uninstall-NpmPackage gulp-cli

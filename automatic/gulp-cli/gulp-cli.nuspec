@@ -25,6 +25,9 @@ You can install either the [nodejs](https://chocolatey.org/packages/nodejs) or [
 ]]></description>
     <releaseNotes>See https://github.com/gulpjs/gulp-cli/releases</releaseNotes>
     <tags>nodejs node javascript web build gulp</tags>
+    <dependencies>
+      <dependency id="chocolatey-npm.extension" version="1.0.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
