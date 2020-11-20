@@ -15,7 +15,7 @@ These functions may be used in Chocolatey install/uninstall scripts by declaring
     <tags>chocolatey extension npm admin</tags>
     <projectUrl>https://github.com/bbtsoftware/chocolatey-packages</projectUrl>
     <copyright>Copyright © BBT Software AG and contributors</copyright>
-    <licenseUrl>https://github.com/bbtsoftware/chocolatey-packages/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/bbtsoftware/chocolatey-packages/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/bbtsoftware/chocolatey-packages</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/extensions/chocolatey-npm.extension</packageSourceUrl>
