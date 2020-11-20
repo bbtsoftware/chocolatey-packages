@@ -6,6 +6,8 @@ pr:
 
 jobs:
 - job: Windows
+  # Allow to run just before next scheduled run starts
+  timeoutInMinutes: 350
   strategy:
     maxParallel: 1
   pool:
