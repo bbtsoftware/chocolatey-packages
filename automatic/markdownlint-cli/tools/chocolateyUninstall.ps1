@@ -1,1 +1,1 @@
-npm uninstall -g markdownlint-cli
+Uninstall-NpmPackage markdownlint-cli
