@@ -8,7 +8,7 @@ $Options = [ordered]@{
     WhatIf        = $au_WhatIf                              #Whatif all packages
     Force         = $false                                  #Force all packages
     Timeout       = 100                                     #Connection timeout in seconds
-    UpdateTimeout = 3600                                    #Update timeout in seconds
+    UpdateTimeout = 7200                                    #Update timeout in seconds
     Threads       = 10                                      #Number of background jobs to use
     Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
     PushAll       = $true                                   #Allow to push multiple packages at once
@@ -120,7 +120,7 @@ $global:au_Root = $Root                                    #Path to the AU packa
 $global:info = Update-AuPackages -Name $Name -Options $Options
 
 #Uncomment to fail the build on build server on any package error
-if ($global:info.error_count.total) { 
+if ($global:info.error_count.total) {
   WriteOutput "Update failed with message: $global:info.result.all" -type Error
-  throw 'Errors during update' 
+  throw 'Errors during update'
 }
