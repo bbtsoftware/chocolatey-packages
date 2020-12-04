@@ -2,6 +2,11 @@ import-module au
 
 $releases = 'https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects'
 
+function global:au_BeforeUpdate {
+  $Latest.Checksum = Get-RemoteChecksum $Latest.Url32
+  $Latest.ChecksumType = "sha256"
+}
+
 function global:au_SearchReplace {
   @{
     'tools\ChocolateyInstall.ps1' = @{
@@ -13,22 +18,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $json = $download_page.AllElements | ? class -eq 'vss-extension' | Select-Object -expand innerHtml | ConvertFrom-Json | Select-Object -expand versions
-  $url = $json.files | ? source -match "\.exe$" | Select-Object -expand source -first 1
-
-  $filename = [IO.Path]::GetFilename($url)
-
-  $version = $json.version | Select-Object -first 1
-  $checksum = Get-RemoteChecksum $url
+  $re = 'SqlServerIntegrationServicesProjects/.+?/vspackage$'
+  $url = $download_page.links | Where-Object href -match $re | ForEach-Object { "https://marketplace.visualstudio.com" + $_.href  }
+  $version = $url -split '/' | Select-Object -Last 1 -Skip 1
 
   @{
-    Version     = $version
-    URL32       = $url
-    Filename32  = $filename
-    Checksum    = $checksum
-    ChecksumType = "sha256"
+    Version   = $version
+    URL32     = $url
   }
 }
 
