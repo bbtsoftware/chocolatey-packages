@@ -6,8 +6,8 @@ $packageArgs = @{
     fileType      = 'exe'
     silentArgs    = "/quiet /log `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
     validExitCodes= @(0)
-    url           = "https://ssis.gallerycdn.vsassets.io/extensions/ssis/sqlserverintegrationservicesprojects/3.10/1600831136483/Microsoft.DataTools.IntegrationServices.exe"
-    checksum      = "0443902fe316663bc8f15dc1b469e79e395ff81e789bda471df72915b0a875ba"
+    url           = "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/SSIS/vsextensions/SqlServerIntegrationServicesProjects/3.11/vspackage"
+    checksum      = "4b15b30bbdb20dcfbb15799aa8d5d8a0bfff433eb76528bf82a1f1d2da95563b"
     checksumType  = "sha256"
   }
   
