@@ -1,6 +1,6 @@
 ﻿Update-SessionEnvironment
 
-$version = '1.8.8'
+$version = '1.8.10'
 
 if (-Not (Get-Command "node" -errorAction SilentlyContinue)) {
     Write-Error "Bower requires Node.js to be installed. To install with Chocolatey, use either of the commands below:"
