@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --install-extension yzhang.markdown-all-in-one
+Install-VsCodeExtension "yzhang.markdown-all-in-one"
