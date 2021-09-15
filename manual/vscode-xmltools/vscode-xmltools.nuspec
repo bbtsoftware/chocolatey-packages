@@ -9,7 +9,7 @@
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml</projectUrl>
     <projectSourceUrl>https://github.com/DotJoshJohnson/vscode-xml</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/manual/vscode-xmltools</packageSourceUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@d8c9bacbea3fd9ad9824780608620b218b47e683/icons/vscode-eslint.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages/icons/vscode-xml.png</iconUrl>
     <licenseUrl>https://marketplace.visualstudio.com/items/DotJoshJohnson.xml/license</licenseUrl>
     <docsUrl>https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml</docsUrl>
     <bugTrackerUrl>https://github.com/DotJoshJohnson/vscode-xml/issues</bugTrackerUrl>
@@ -19,10 +19,6 @@
 # XML Tools for Visual Studio Code
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/DotJoshJohnson.xml.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/DotJoshJohnson.xml.svg?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)  
-
-[![](https://img.shields.io/badge/TWITTER-%40DotJohnson-blue.svg?logo=twitter&style=for-the-badge)](https://twitter.com/DotJoshJohnson)
-[![](https://img.shields.io/badge/gitter-join_chat-1dce73.svg?style=for-the-badge&logo=gitter-white)](https://gitter.im/vscode-xml/vscode-xml)
-[![Beerpay](https://img.shields.io/beerpay/DotJoshJohnson/vscode-xml.svg?style=for-the-badge)](https://beerpay.io/DotJoshJohnson/vscode-xml)
 
 ## Features
 * [XML Formatting](https://github.com/DotJoshJohnson/vscode-xml/wiki/xml-formatting)
@@ -69,6 +65,7 @@ Icons used in the XML Tree View are used under the Creative Commons 3.0 BY licen
     <releaseNotes>https://github.com/DotJoshJohnson/vscode-xml/releases</releaseNotes>
     <dependencies>
       <dependency id="vscode" version="1.2.0" />
+      <dependency id="chocolatey-vscode.extension" version="0.7.2" />
     </dependencies>
   </metadata>
   <files>
