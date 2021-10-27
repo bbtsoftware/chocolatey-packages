@@ -1,2 +1,2 @@
 Update-SessionEnvironment
-code --uninstall-extension yzhang.markdown-all-in-one
+Uninstall-VsCodeExtension "yzhang.markdown-all-in-one"
