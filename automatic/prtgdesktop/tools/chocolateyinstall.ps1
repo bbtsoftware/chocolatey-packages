@@ -6,12 +6,12 @@ $packageArgs = @{
 
   fileType      = 'exe'
 
-  url            = "https://downloads.paessler.com/prtg_desktop/22.3.0/32bit/prtg-desktop-offline-22.3.0-32bit.exe"
-  checksum       = "1a11928f38d99de0263e6e9f89c7d5aca848d882"
+  url            = "https://downloads.paessler.com/prtg_desktop/22.4.2/32bit/prtg-desktop-offline-22.4.2-32bit.exe"
+  checksum       = "5ddf432b71b97be5b16a7f164e1f67c5b6d615af"
   checksumType   = "SHA1"
 
-  url64          = "https://downloads.paessler.com/prtg_desktop/22.3.0/64bit/prtg-desktop-offline-22.3.0-64bit.exe"
-  checksum64     = "f813f2e9037cebae11baea7e351957233cd7cc24"
+  url64          = "https://downloads.paessler.com/prtg_desktop/22.4.2/64bit/prtg-desktop-offline-22.4.2-64bit.exe"
+  checksum64     = "ac568692050b3fd2719737a626fd0f0d54b27ba3"
   checksumType64 = "SHA1"
 
   silentArgs     = '/quiet /norestart'
