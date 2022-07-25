@@ -1,5 +1,5 @@
 ﻿Update-SessionEnvironment
 
-$version = '0.32.0'
+$version = '0.32.1'
 
 Install-NpmPackage markdownlint-cli@$version
