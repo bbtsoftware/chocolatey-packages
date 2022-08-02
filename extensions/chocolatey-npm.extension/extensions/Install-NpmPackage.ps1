@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-    Installs an NPM package gloabl for the current user.
+    Installs an NPM package globally for the current user.
 
 .DESCRIPTION
-    Installs an NPM package gloabl for the current user.
+    Installs an NPM package globally for the current user.
 
     Requires that NodeJS and NPM are installed, otherwise an error is shown.
 
