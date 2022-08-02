@@ -5,7 +5,7 @@
 .DESCRIPTION
     Installs an NPM package gloabl for the current user.
 
-    Requires that NodeJS is installed, otherwise an error is shown.
+    Requires that NodeJS and NPM are installed, otherwise an error is shown.
 
     Supports installing packages for the user which initiated the process when running in background mode.
 
