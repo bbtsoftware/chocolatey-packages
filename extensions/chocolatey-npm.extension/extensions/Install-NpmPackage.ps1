@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    Installs an NPM package gloabl for the current user.
+    Installs an NPM package globally for the current user.
 
 .DESCRIPTION
-    Installs an NPM package gloabl for the current user.
+    Installs an NPM package globally for the current user.
 
-    Requires that NodeJS is installed, otherwise an error is shown.
+    Requires that NodeJS and NPM are installed, otherwise an error is shown.
 
     Supports installing packages for the user which initiated the process when running in background mode.
 
@@ -27,12 +27,15 @@ function Install-NpmPackage {
         [string]$package
     )
 
+    $packageName = $env:ChocolateyPackageName
     if (-Not (Get-Command "node" -errorAction SilentlyContinue)) {
-        $packageName = $env:ChocolateyPackageName
         Write-Error "$packageName requires Node.js to be installed. To install with Chocolatey, use either of the commands below:"
         Write-Error "  choco install nodejs"
         Write-Error "  choco install nodejs-lts"
         throw "Node.js not found"
+    } elseif (-Not (Get-Command "npm" -CommandType Application -ErrorAction SilentlyContinue)) {
+        Write-Error "$packageName requires npm to be installed. Please verify your Node.js installation includes the 'npm package manager' component, and was added to PATH."
+        throw "npm not found"
     } else {
         $user = $env:USER_CONTEXT
         if ($user) {
