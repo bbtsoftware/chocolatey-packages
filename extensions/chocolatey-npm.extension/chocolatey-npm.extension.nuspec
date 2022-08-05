@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>chocolatey-npm.extension</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>Chocolatey NPM servicing extension</title>
     <summary>Helper functions useful for developing packages for installing NPM packages.</summary>
     <authors>BBT Software AG</authors>
