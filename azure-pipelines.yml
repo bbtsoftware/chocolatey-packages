@@ -65,6 +65,9 @@ jobs:
       . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
     displayName: 'Clone AU'
   - powershell: |
+      Install-Module PowerShellForGitHub -Force
+    displayName: 'Install required modules'
+  - powershell: |
       "Build info"
       '  {0,-20} {1}' -f 'Build reason:', $Env:BUILD_REASON
     displayName: 'Show build information'
