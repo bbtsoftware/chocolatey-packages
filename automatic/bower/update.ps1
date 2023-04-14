@@ -1,6 +1,8 @@
 import-module au
+import-module PowerShellForGitHub
 
-$releases = 'https://github.com/bower/bower/releases'
+$repoOwner = 'bower'
+$repoName = 'bower'
 
 function global:au_SearchReplace {
     $version = [Version]$Latest.Version
@@ -14,17 +16,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $release = Get-GitHubRelease -OwnerName $repoOwner -RepositoryName $repoName -Latest
+    $version = $release.tag_name
+    if ($version.StartsWith('v')) {
+      $version = $version.Substring(1)
+    }
 
-    #v1.7.9.zip
-    $re  = "(.*).zip"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $file = $url -split 'v' | Select-Object -last 1
-
-    $version = [IO.Path]::GetFileNameWithoutExtension($file)
-
-    $Latest = @{ Version = $version }
-    return $Latest
+    @{
+      Version   = $version
+    }
 }
 
 update -ChecksumFor none
