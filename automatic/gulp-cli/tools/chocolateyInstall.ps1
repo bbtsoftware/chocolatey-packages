@@ -1,5 +1,5 @@
 ﻿Update-SessionEnvironment
 
-$version = '2.3.0'
+$version = '3.0.0'
 
 Install-NpmPackage gulp-cli@$version
