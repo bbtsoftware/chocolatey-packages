@@ -20,9 +20,14 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = 'SqlServerIntegrationServicesProjects/.+?/vspackage$'
-  $url = $download_page.links | Where-Object href -match $re | ForEach-Object { "https://marketplace.visualstudio.com" + $_.href  }
+  $re = '/_apis/public/gallery/publishers/SSIS/vsextensions/MicrosoftDataToolsIntegrationServices/.+/vspackage'
+
+  $url = $download_page.links | Where-Object href -match $re | Where-Object class -eq "install-button-container" | ForEach-Object { "https://marketplace.visualstudio.com" + $_.href  }
   $version = $url -split '/' | Select-Object -Last 1 -Skip 1
+
+  # Write-Host "Links: " + $download_page.links
+  # Write-Host "URL: " + $url
+  # Write-Host "Version: " + $version
 
   @{
     Version   = $version
