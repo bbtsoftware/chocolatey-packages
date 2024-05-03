@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@74b0a3c4fe3e5ad5b896dd63f99a4edb346f8e21/icons/ssis-vs2022.png" height="48" width="48" />Microsoft SQL Server Integration Services Projects](https://community.chocolatey.org/packages/ssis-vs2022)
+# [<img src="https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@58c2f838f653b03f0b017c2cf36bcea22cf581ce/icons/ssis-vs2022.png" height="48" width="48" />Microsoft SQL Server Integration Services Projects](https://community.chocolatey.org/packages/ssis-vs2022)
 
 Extension for Visual Studio 2022 to build high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.
 
