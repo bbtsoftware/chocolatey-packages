@@ -84,7 +84,7 @@ jobs:
         # Clean the choco logs as it's quite large
         rm "$env:ChocolateyInstall\logs\*.log"
       }
-      if ( ($Env:BUILD_REASON -eq 'IndividualCI') -or ($Env:BUILD_REASON -eq 'BatchedCI') -or ('true' -eq 'true')) {
+      if ( ($Env:BUILD_REASON -eq 'IndividualCI') -or ($Env:BUILD_REASON -eq 'BatchedCI') ) {
         switch -regex ($Env:BUILD_SOURCEVERSIONMESSAGE)
         {
           '\[AU (.+?)\]'   { $forced = $Matches[1] }
