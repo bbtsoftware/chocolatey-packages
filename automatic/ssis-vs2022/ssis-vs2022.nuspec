@@ -28,7 +28,6 @@ This package has the following additional requirements:
     <tags>microsoft integration integration-services sql ssis ssis-vs2022 ssdt sql-server data-tools</tags>
     <dependencies>
       <dependency id="DotNet4.6-TargetPack" />
-      <dependency id="chocolatey-visualstudio.extension" version="1.11.0" />
     </dependencies>
   </metadata>
   <files>
