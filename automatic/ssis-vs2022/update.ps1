@@ -10,9 +10,9 @@ function global:au_BeforeUpdate {
 function global:au_SearchReplace {
   @{
     'tools\ChocolateyInstall.ps1' = @{
-        "(\s*\-VsixUrl\s)'([^']+)'" = "`$1'$($Latest.URL32)'"
-        "(\s*\-Checksum\s)'([^']+)'" = "`$1'$($Latest.Checksum)'"
-        "(\s*\-ChecksumType\s)'([^']+)'" = "`$1'$($Latest.ChecksumType)'"
+        "(\s*url\s*=\s*)`"([^*]+)`""          = "`$1`"$($Latest.URL32)`""
+        "(\s*checksum\s*=\s*)`"([^*]+)`""     = "`$1`"$($Latest.Checksum)`""
+        "(\s*checksumType\s*=\s*)`"([^*]+)`"" = "`$1`"$($Latest.ChecksumType)`""
       }
   }
 }
