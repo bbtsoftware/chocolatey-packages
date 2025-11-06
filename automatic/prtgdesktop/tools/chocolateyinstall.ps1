@@ -10,8 +10,8 @@ $packageArgs = @{
   checksum       = "d986dd5636cf8567145fb5c6042b33b02b0d0dd5"
   checksumType   = "SHA1"
 
-  url64          = "https://downloads.paessler.com/prtg_desktop/25.7.0/64bit/prtg-desktop-offline-25.7.0-64bit.exe"
-  checksum64     = "da9b019145dc7c59036ff49f7415d7f12d285a6f"
+  url64          = "https://downloads.paessler.com/prtg_desktop/25.8.0/64bit/prtg-desktop-offline-25.8.0-64bit.exe"
+  checksum64     = "3be6acd5ab662dcf677c239242a04352a8fd7055"
   checksumType64 = "SHA1"
 
   silentArgs     = '/quiet /norestart'
