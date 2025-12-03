@@ -3,7 +3,7 @@
   <metadata>
     <id>ssis-vs2022</id>
     <title>Microsoft SQL Server Integration Services Projects for Visual Studio 2022</title>
-    <version>2.0</version>
+    <version>2.1</version>
     <authors>Microsoft</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=SSIS.MicrosoftDataToolsIntegrationServices</projectUrl>
