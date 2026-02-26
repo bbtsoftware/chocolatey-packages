@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-cake</id>
-    <title>Visual Studio Code Cake Extension</title>
+    <title>[Deprecated] Visual Studio Code Cake Extension</title>
     <version>1.0.0.20191026</version>
     <authors>Cake Build</authors>
     <owners>BBT Software AG</owners>
@@ -16,15 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Cake build script language support.</summary>
     <description>
-Cake build script language support.
-
-This addin brings language support for [Cake](https://cakebuild.net/) build scripts to Visual Studio Code.
-
-## Notes
-
-* The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
-</description>
+⚠️ This package is deprecated and out of support.
+It will no longer receive updates.
+    </description>
     <tags>microsoft visualstudiocode vscode extension cake</tags>
     <releaseNotes>https://github.com/cake-build/cake-vscode/releases</releaseNotes>
     <dependencies>
