@@ -28,8 +28,7 @@ This addin brings language support for [Cake](https://cakebuild.net/) build scri
     <tags>microsoft visualstudiocode vscode extension cake</tags>
     <releaseNotes>https://github.com/cake-build/cake-vscode/releases</releaseNotes>
     <dependencies>
-      <dependency id="vscode" version="1.2.0" />
-      <dependency id="vscode-csharp" version="[1.0,2.0)" />
+      <dependency id="vscode" /> 
     </dependencies>
   </metadata>
   <files>
