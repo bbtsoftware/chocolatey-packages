@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-codespellchecker-german</id>
-    <title>Visual Studio Code German Code Spell Checker Extension</title>
-    <version>1.0.0.20181011</version>
+    <title>[Deprecated] Visual Studio Code German Code Spell Checker Extension</title>
+    <version>1.0.0.20260302</version>
     <authors>Street Side Software</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-german</projectUrl>
@@ -16,15 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code German Code Spell Checker Extension</summary>
     <description>
-German dictionary extension for VS Code.
-
-Imports the German spell checking dictionary for [Code Spell Checker](https://chocolatey.org/packages/vscode-codespellchecker).
-
-## Notes
-
-* The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
-</description>
+⚠️ This package is deprecated and out of support.
+It will no longer receive updates.
+    </description>
     <tags>microsoft visualstudiocode vscode extension spell-checker german</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker-german/changelog</releaseNotes>
     <dependencies>

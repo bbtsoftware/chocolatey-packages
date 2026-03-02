@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-markdownlint</id>
-    <title>Visual Studio Code Markdownlint Extension</title>
-    <version>1.0.0.20181011</version>
+    <title>[Deprecated] Visual Studio Code Markdownlint Extension</title>
+    <version>1.0.0.20260302</version>
     <authors>David Anson</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</projectUrl>
@@ -16,17 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Markdown linting and style checking for Visual Studio Code</summary>
     <description>
-Markdown linting and style checking for Visual Studio Code.
-
-The [Markdown](https://en.wikipedia.org/wiki/Markdown) markup language is designed to be easy to read, write, and understand. It succeeds - and its flexibility is both a benefit and a drawback. Many styles are possible, so formatting can be inconsistent. Some constructs don't work well in all parsers and should be avoided. For example, [here are some common/troublesome Markdown constructs](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025).
-
-[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) is a Visual Studio Code extension that includes a library of rules to encourage standards and consistency for Markdown files. It is powered by [markdownlint for Node.js](https://github.com/DavidAnson/markdownlint) which is based on [markdownlint for Ruby](https://github.com/mivok/markdownlint).
-
-## Notes
-
-* The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
-</description>
+⚠️ This package is deprecated and out of support.
+It will no longer receive updates.
+    </description>
     <tags>microsoft visualstudiocode vscode extension markdown markdownlint</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/DavidAnson.vscode-markdownlint/changelog</releaseNotes>
     <dependencies>

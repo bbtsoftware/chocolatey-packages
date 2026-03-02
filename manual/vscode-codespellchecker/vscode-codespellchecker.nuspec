@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>vscode-codespellchecker</id>
-    <title>Visual Studio Code Code Spell Checker Extension</title>
-    <version>1.0.0.20181011</version>
+    <title>[Deprecated] Visual Studio Code Code Spell Checker Extension</title>
+    <version>1.0.0.20260302</version>
     <authors>Street Side Software</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker</projectUrl>
@@ -16,15 +16,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code Code Spell Checker Extension</summary>
     <description>
-A basic spell checker that works well with camelCase code.
-
-The goal of this spell checker is to help with catching common spelling errors while keeping the number of false positives low.
-
-## Notes
-
-* The package always installs the latest version of the extension.
-  The version of the Chocolatey package reflects not the version of the extension.
-</description>
+⚠️ This package is deprecated and out of support.
+It will no longer receive updates.
+    </description>
     <tags>microsoft visualstudiocode vscode extension spell-checker</tags>
     <releaseNotes>https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/changelog</releaseNotes>
     <dependencies>
