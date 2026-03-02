@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-eslint</id>
     <title>[Deprecated] Visual Studio Code ESLint Extension</title>
-    <version>1.0.0.20181011</version>
+    <version>1.0.0.20260302</version>
     <authors>Dirk Baeumer</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint</projectUrl>

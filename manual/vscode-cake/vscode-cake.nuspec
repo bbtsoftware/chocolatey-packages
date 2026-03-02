@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-cake</id>
     <title>[Deprecated] Visual Studio Code Cake Extension</title>
-    <version>1.0.0.20191026</version>
+    <version>1.0.0.20260302</version>
     <authors>Cake Build</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=cake-build.cake-vscode</projectUrl>

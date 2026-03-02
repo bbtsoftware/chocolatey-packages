@@ -3,7 +3,7 @@
   <metadata>
     <id>vscode-markdownlint</id>
     <title>[Deprecated] Visual Studio Code Markdownlint Extension</title>
-    <version>1.0.0.20181011</version>
+    <version>1.0.0.20260302</version>
     <authors>David Anson</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint</projectUrl>
