@@ -20,17 +20,12 @@ Visit https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-
 
 This package has the following additional requirements:
 
-* Visual Studio core editor
-* SQL Server Data Tools
-* .NET Framework 4 targeting pack
-* .NET Framework 4.5 targeting pack
+* Visual Studio 2022/2026
+* SQL Server Data Tools (SSDT)
 ]]></description>
     <tags>microsoft integration integration-services sql ssis ssis-vs2022 ssdt sql-server data-tools</tags>
-    <dependencies>
-      <dependency id="DotNet4.6-TargetPack" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-  </files>  
+  </files>
 </package>
