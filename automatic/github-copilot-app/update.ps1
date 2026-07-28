@@ -74,9 +74,6 @@ function global:au_SearchReplace {
             '(?m)^(\s*url\s*=\s*)([''"]).*?\2' = "`$1'$($Latest.URL64)'"
             '(?m)^(\s*checksum\s*=\s*)([''"]).*?\2' = "`$1'$($Latest.Checksum64)'"
         }
-        'tools\chocolateyUninstall.ps1' = @{
-            '(?m)(msiexec\.exe\s+/x\s+")([^"]+)(")' = "`$1$($Latest.URL64)`$3"
-        }
         'github-copilot-app.nuspec' = @{
             '(?m)(<releaseNotes>).*?(</releaseNotes>)' = "`$1$($Latest.ReleaseNotes)`$2"
         }
