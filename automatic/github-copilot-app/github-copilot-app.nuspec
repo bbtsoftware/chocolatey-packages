@@ -3,7 +3,7 @@
   <metadata>
     <id>github-copilot-app</id>
     <title>GitHub Copilot App</title>
-    <version>1.0.26</version>
+    <version>1.1.2</version>
     <authors>GitHub</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/github/app</projectUrl>
@@ -15,11 +15,14 @@
     <bugTrackerUrl>https://github.com/github/app/issues</bugTrackerUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>GitHub Copilot App</summary>
-    <description>
-The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
-    </description>
+    <description><![CDATA[The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
+
+## Notes
+
+Downloads are provided from the official [GitHub Copilot app releases](https://github.com/github/app/releases).
+]]></description>
     <tags>github copilot</tags>
-    <releaseNotes>https://github.com/github/app/releases#release-v1.0.26</releaseNotes>
+    <releaseNotes>https://github.com/github/app/releases#release-v1.1.2</releaseNotes>
     <dependencies />
   </metadata>
   <files>

@@ -6,7 +6,7 @@ if ($key.Count -eq 1) {
         Uninstall-ChocolateyPackage `
             -PackageName $env:ChocolateyPackageName `
             -FileType 'MSI' `
-            -SilentArgs "$($_.PSChildName) /qb /norestart" `
+            -SilentArgs "$($_.PSChildName) /qn /norestart" `
             -ValidExitCodes @(0, 3010)
     }
 } elseif ($key.Count -eq 0) {
