@@ -63,7 +63,7 @@ function Get-ReleaseAssetByName {
         Select-Object -First 1
 
     if (-not $asset) {
-        throw "Asset '$Name' wurde im aktuellen GitHub Release nicht gefunden."
+        throw “Asset '$Name' was not found in the current GitHub release.”
     }
 
     return $asset
@@ -76,11 +76,11 @@ function Get-ChecksumFromGitHubAssetDigest {
     )
 
     if (-not $Asset.digest) {
-        throw 'Das GitHub Asset enthaelt kein digest-Feld.'
+        throw 'The GitHub asset does not contain a digest field.'
     }
 
     if ($Asset.digest -notmatch '^sha256:([a-fA-F0-9]{64})$') {
-        throw "Das digest-Feld hat nicht das erwartete SHA256-Format: $($Asset.digest)"
+        throw "The digest field does not have the expected SHA256 format: $($Asset.digest)"
     }
 
     return $Matches[1].ToLowerInvariant()
