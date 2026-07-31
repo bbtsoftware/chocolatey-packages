@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>github-copilot-app</id>
+    <title>GitHub Copilot App</title>
+    <version>1.1.2</version>
+    <authors>GitHub</authors>
+    <owners>BBT Software AG</owners>
+    <projectUrl>https://github.com/github/app</projectUrl>
+    <projectSourceUrl>https://github.com/github/app</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/github-copilot-app</packageSourceUrl> 
+    <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@a84159b4c78f838d7e3ee3b162a7fb770e055083/icons/github-copilot-app.png</iconUrl>
+    <licenseUrl>https://github.com/github/app/blob/main/License.md</licenseUrl>
+    <docsUrl>https://github.com/github/app/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/github/app/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>GitHub Copilot App</summary>
+    <description><![CDATA[The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
+
+## Notes
+
+Downloads are provided from the official [GitHub Copilot app releases](https://github.com/github/app/releases).
+]]></description>
+    <tags>github copilot</tags>
+    <releaseNotes>https://github.com/github/app/releases#release-v1.1.2</releaseNotes>
+    <dependencies />
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
