@@ -3,7 +3,7 @@
   <metadata>
     <id>github-copilot-app</id>
     <title>GitHub Copilot App</title>
-    <version>1.1.14</version>
+    <version>1.1.15</version>
     <authors>GitHub</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/github/app</projectUrl>
@@ -17,16 +17,12 @@
     <summary>GitHub Copilot App</summary>
     <description><![CDATA[The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
 
-## Licensing
-
-GitHub Copilot is a licensed product. A free tier may be available, with additional paid subscription plans offered by GitHub. Usage of the GitHub Copilot app may require a GitHub account and an appropriate GitHub Copilot subscription.
-
 ## Notes
 
 Downloads are provided from the official [GitHub Copilot app releases](https://github.com/github/app/releases).
 ]]></description>
     <tags>github copilot ai assistant license subscription</tags>
-    <releaseNotes>https://github.com/github/app/releases#release-v1.1.14</releaseNotes>
+    <releaseNotes>https://github.com/github/app/releases#release-v1.1.15</releaseNotes>
     <dependencies />
   </metadata>
   <files>
