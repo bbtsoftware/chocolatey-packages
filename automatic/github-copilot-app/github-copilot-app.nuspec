@@ -7,7 +7,6 @@
     <authors>GitHub</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/github/app</projectUrl>
-    <projectSourceUrl>https://github.com/github/app</projectSourceUrl>
     <packageSourceUrl>https://github.com/bbtsoftware/chocolatey-packages/tree/master/automatic/github-copilot-app</packageSourceUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/bbtsoftware/chocolatey-packages@7537327f9746b39f9868fd9a7f4186488e5b6c5d/icons/github-copilot-app.png</iconUrl>
     <licenseUrl>https://github.com/github/app/blob/main/License.md</licenseUrl>
