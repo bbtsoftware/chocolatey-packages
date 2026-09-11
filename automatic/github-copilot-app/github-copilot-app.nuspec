@@ -3,7 +3,7 @@
   <metadata>
     <id>github-copilot-app</id>
     <title>GitHub Copilot App</title>
-    <version>1.1.17</version>
+    <version>1.1.19</version>
     <authors>GitHub</authors>
     <owners>BBT Software AG</owners>
     <projectUrl>https://github.com/github/app</projectUrl>
@@ -21,7 +21,7 @@
 Downloads are provided from the official [GitHub Copilot app releases](https://github.com/github/app/releases).
 ]]></description>
     <tags>github copilot ai assistant license subscription</tags>
-    <releaseNotes>https://github.com/github/app/releases#release-v1.1.17</releaseNotes>
+    <releaseNotes>https://github.com/github/app/releases#release-v1.1.19</releaseNotes>
     <dependencies />
   </metadata>
   <files>
