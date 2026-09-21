@@ -9,12 +9,13 @@ $packageArgs = @{
         0, # success
         3010 # success, restart required
     )
-    url           = 'https://github.com/github/app/releases/download/v1.1.22/GitHub-Copilot-windows-x64.msi'
-    checksum      = 'ac28085f87c12aa4b0946bce79ef3b628bfa1354fe4cfaf22253dfe5f3232fbf'
+    url           = 'https://github.com/github/app/releases/download/v1.1.23/GitHub-Copilot-windows-x64.msi'
+    checksum      = 'b0f1851edb5d202e6cc4d35ef313c2ebdf898f074712e848099f3de2b99cecb3'
     checksumType  = "sha256"
   }
 
 Install-ChocolateyPackage @packageArgs
+
 
 
 
